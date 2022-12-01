@@ -21,6 +21,12 @@ body {
     body {
       font-size: 16px; } }
 
+ :root{
+  --primary: #E788B1;
+  --secondary: #C1B2AB;
+ } 
+     
+
 a {
   color: #2c98f0;
   -webkit-transition: 0.5s;
@@ -48,7 +54,7 @@ figure {
     font-size: 16px;
     width: 80%;
     margin: 20px auto 0px auto;
-    color: #b3b3b3;
+    color: #E788B1;
     font-style: italic;
     font-family: "Quicksand", Arial, sans-serif; }
     @media screen and (max-width: 480px) {
@@ -56,15 +62,15 @@ figure {
         width: 100%; } }
 
 ::-webkit-selection {
-  color: #fff;
+  color: var(--primary);
   background: #2c98f0; }
 
 ::-moz-selection {
-  color: #fff;
+  color: var(--primary);
   background: #2c98f0; }
 
 ::selection {
-  color: #fff;
+  color: var(--primary);
   background: #2c98f0; }
 
 #colorlib-page {
@@ -80,7 +86,7 @@ figure {
   position: fixed;
   overflow-y: scroll;
   z-index: 1001;
-  background: #f2f3f7;
+  background: var(--primary);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -232,7 +238,7 @@ figure {
 
 #colorlib-hero {
   min-height: 500px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: var(--primary) url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   margin-bottom: 10em;
@@ -320,7 +326,7 @@ figure {
         #colorlib-hero .flexslider .slider-text > .slider-text-inner s
 .colorlib-lead {
           font-size: 20px;
-          color: #fff; }
+          color: var(--primary); }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
           margin-bottom: 0; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
@@ -351,7 +357,7 @@ body.offcanvas {
     -o-transform: translateX(0);
     transform: translateX(0);
     width: 300px;
-    background: #f2f3f7;
+    background: var(--primary);
     z-index: 999;
     position: fixed; }
   body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
@@ -493,7 +499,7 @@ body.offcanvas {
   content: "\e114"; }
 
 .panel-heading a.collapsed {
-  background: #f2f3f7;
+  background: var(--primary);
   border: 1px solid #e6e6e6 !important;
   color: #333333; }
 
@@ -525,7 +531,7 @@ body.offcanvas {
   position: absolute;
   display: block;
   width: 4px;
-  background: #f2f3f7;
+  background: var(--primary);
   top: 20px;
   bottom: 20px;
   margin-left: 29px; }
@@ -551,13 +557,13 @@ body.offcanvas {
   -ms-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-  box-shadow: 0 0 0 5px #f2f3f7;
+  -moz-box-shadow: 0 0 0 5px var(--primary);
+  -webkit-box-shadow: 0 0 0 5px var(--primary);
+  box-shadow: 0 0 0 5px var(--primary);
   line-height: 40px;
   float: left; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-    color: #fff; }
+    color: var(--primary); }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
     background: #ec5453; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
@@ -567,14 +573,14 @@ body.offcanvas {
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
     background: #2fa499; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-    background: #fff;
+    background: var(--primary);
     width: 20px;
     height: 20px;
     margin-left: 10px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: #f2f3f7;
+  background: var(--primary);
   padding: 1.5em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
@@ -589,7 +595,7 @@ body.offcanvas {
   height: 0;
   border-style: solid;
   border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
+  border-color: transparent var(--primary) transparent transparent;
   left: 0;
   top: 10px;
   margin-left: -9px; }
@@ -687,7 +693,7 @@ body.offcanvas {
       border-color: #2c98f0 transparent transparent transparent; }
     .services .icon i {
       font-size: 30px;
-      color: #fff;
+      color: var(--primary);
       z-index: 1;
       display: table-cell;
       vertical-align: middle; }
@@ -737,7 +743,7 @@ body.offcanvas {
   height: 6px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #f2f3f7;
+  background: var(--primary);
   overflow: visible; }
 
 .progress-bar {
@@ -822,7 +828,7 @@ body.offcanvas {
     height: 100px;
     display: table;
     text-align: center;
-    background: #f2f3f7;
+    background: var(--primary);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -861,7 +867,7 @@ body.offcanvas {
 .blog-entry {
   width: 100%;
   float: left;
-  background: #fff;
+  background: var(--primary);
   margin-bottom: 3em; }
   @media screen and (max-width: 768px) {
     .blog-entry {
@@ -986,7 +992,7 @@ body.offcanvas {
       transform: translate3d(0, -15px, 0);
       margin-bottom: 15px; }
       .project .desc h3 a {
-        color: #fff; }
+        color: var(--primary); }
     .project .desc span {
       display: block;
       color: rgba(255, 255, 255, 0.7);
@@ -1056,7 +1062,7 @@ body.offcanvas {
       height: 100px;
       font-size: 50px;
       color: #2c98f0;
-      background: #fff;
+      background: var(--primary);
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -1144,7 +1150,7 @@ body.offcanvas {
         border-radius: 2px; }
       .pagination li a:hover, .pagination li a:focus {
         background: #2c98f0;
-        color: #fff;
+        color: var(--primary);
         border: 1px solid #2c98f0; }
       @media screen and (max-width: 768px) {
         .pagination li a {
@@ -1154,7 +1160,7 @@ body.offcanvas {
       border: 1px solid #2c98f0 !important; }
       .pagination li.active a:hover, .pagination li.active a:focus {
         background: #2c98f0;
-        color: #fff;
+        color: var(--primary);
         border: 1px solid #2c98f0 !important; }
 
 .btn {
@@ -1186,7 +1192,7 @@ body.offcanvas {
 
 .btn-primary {
   background: #2c98f0;
-  color: #fff;
+  color: var(--primary);
   border: 2px solid #2c98f0; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #44a4f2 !important;
@@ -1197,11 +1203,11 @@ body.offcanvas {
     border: 2px solid #2c98f0; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
       background: #2c98f0;
-      color: #fff; }
+      color: var(--primary); }
 
 .btn-success {
   background: #5cb85c;
-  color: #fff;
+  color: var(--primary);
   border: 2px solid #5cb85c; }
   .btn-success:hover, .btn-success:focus, .btn-success:active {
     background: #4cae4c !important;
@@ -1212,11 +1218,11 @@ body.offcanvas {
     border: 2px solid #5cb85c; }
     .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
       background: #5cb85c;
-      color: #fff; }
+      color: var(--primary); }
 
 .btn-info {
   background: #5bc0de;
-  color: #fff;
+  color: var(--primary);
   border: 2px solid #5bc0de; }
   .btn-info:hover, .btn-info:focus, .btn-info:active {
     background: #46b8da !important;
@@ -1227,11 +1233,11 @@ body.offcanvas {
     border: 2px solid #5bc0de; }
     .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
       background: #5bc0de;
-      color: #fff; }
+      color: var(--primary); }
 
 .btn-warning {
   background: #f0ad4e;
-  color: #fff;
+  color: var(--primary);
   border: 2px solid #f0ad4e; }
   .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
     background: #eea236 !important;
@@ -1242,11 +1248,11 @@ body.offcanvas {
     border: 2px solid #f0ad4e; }
     .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
       background: #f0ad4e;
-      color: #fff; }
+      color: var(--primary); }
 
 .btn-danger {
   background: #d9534f;
-  color: #fff;
+  color: var(--primary);
   border: 2px solid #d9534f; }
   .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
     background: #d43f3a !important;
@@ -1257,7 +1263,7 @@ body.offcanvas {
     border: 2px solid #d9534f; }
     .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
       background: #d9534f;
-      color: #fff; }
+      color: var(--primary); }
 
 .btn-outline {
   background: none;
@@ -1278,7 +1284,7 @@ body.offcanvas {
   box-shadow: none;
   background: transparent;
   border: transparent;
-  background: #f2f3f7;
+  background: var(--primary);
   height: 54px;
   font-size: 16px;
   font-weight: 400;
