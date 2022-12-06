@@ -22,7 +22,7 @@ body {
       font-size: 16px; } }
 
  :root{
-  --primary: #E788B1;
+  --primary: #f6b7d2;
   --secondary: #C1B2AB;
  } 
      
@@ -468,7 +468,7 @@ body.offcanvas {
   text-transform: uppercase;
   font-family: "Quicksand", Arial, sans-serif;
   background-color: #2c98f0;
-  color: #fff;
+  color: rgb(199, 69, 69);
   position: relative;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
